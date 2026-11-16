@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول · Micro Learn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body class="bg-white font-cairo text-ink text-[13px] antialiased">
+
+    <div class="min-h-screen grid grid-cols-1 lg:grid-cols-[44%_56%]">
+
+        <!-- جهة النموذج -->
+        <div class="relative flex flex-col justify-center w-full max-w-[730px] mx-auto px-6 pt-[115px] pb-[70px] lg:px-[clamp(25px,5vw,90px)] lg:py-[34px]">
+
+            <div class="absolute top-[33px] right-6 lg:right-[5%] flex items-center gap-[11px]">
+                <img src="assets/images/brand-mark.svg" alt="" class="w-11 h-11">
+                <div>
+                    <span class="block text-base font-bold leading-tight text-brand-deep">MICRO LEARN</span>
+                    <span class="block text-[9px] tracking-widest text-[#899eaa]">ADMIN WORKSPACE</span>
+                </div>
+            </div>
+
+            <div>
+                <span class="inline-flex items-center gap-[7px] text-[11px] font-black text-brand">
+                    <i class="w-1.5 h-1.5 rounded-full bg-sun"></i>
+                    مرحباً بك في تجربة الإدارة الجديدة
+                </span>
+                <h1 class="mt-2 mb-[9px] text-[24px] md:text-[29px] leading-[1.6] font-black text-brand-deep">
+                    إدارة منصتك التعليمية<br>بسهولة ووضوح.
+                </h1>
+                <p class="mb-7 text-xs leading-[2] text-[#8196a0]">واجهة تسجيل دخول عربية عصرية، صُممت لتكون متناسقة مع موقع iTutor24 الجديد.</p>
+
+                <form action="index.html" class="grid gap-[17px]">
+                    <label class="flex flex-col gap-[9px] text-[11px] font-extrabold text-[#466674]">
+                        البريد الإلكتروني
+                        <input type="email" placeholder="your@email.com" autocomplete="username"
+                            class="min-h-[43px] w-full px-3 py-2.5 rounded-[11px] border border-[#dde9ec] bg-white text-xs font-normal text-[#274652] outline-none focus:border-[#43a1a8] focus:ring-[3px] focus:ring-[#2a9ba31c]">
+                    </label>
+
+                    <label class="flex flex-col gap-[9px] text-[11px] font-extrabold text-[#466674]">
+                        كلمة المرور
+                        <div class="relative">
+                            <input id="login-pass" type="password" placeholder="••••••••" autocomplete="current-password"
+                                class="min-h-[43px] w-full pl-12 pr-3 py-2.5 rounded-[11px] border border-[#dde9ec] bg-white text-xs font-normal text-[#274652] outline-none focus:border-[#43a1a8] focus:ring-[3px] focus:ring-[#2a9ba31c]">
+                            <button id="toggle-password" type="button" aria-label="إظهار كلمة المرور"
+                                class="absolute left-[5px] top-[2px] w-[39px] h-[39px] grid place-items-center rounded-[11px] text-[#466879] hover:text-brand">
+                                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" /><circle cx="12" cy="12" r="3" /></svg>
+                            </button>
+                        </div>
+                    </label>
+
+                    <div class="flex items-center justify-between gap-3.5 text-[11px]">
+                        <label class="flex items-center gap-[5px]">
+                            <input type="checkbox" class="w-4 h-4 accent-brand">
+                            تذكرني
+                        </label>
+                        <a href="https://itutor24.com/admin/login" target="_blank" rel="noopener noreferrer" class="text-brand">الدخول إلى الموقع الفعلي</a>
+                    </div>
+
+                    <button type="submit"
+                        class="min-h-[39px] w-full inline-flex items-center justify-center gap-2 px-[15px] rounded-[11px] bg-brand text-white font-extrabold shadow-[0_6px_15px_rgba(6,113,136,.16)] hover:-translate-y-px transition">
+                        استعراض لوحة التحكم التجريبية
+                        <svg class="w-[18px] h-[18px] rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6" /></svg>
+                    </button>
+                </form>
+
+                <div class="flex items-start gap-[7px] mt-[19px] p-3.5 rounded-xl border border-[#cfe5e2] bg-[#f1f9f7] text-[11px] leading-[1.9] text-[#3b7180]">
+                    <svg class="shrink-0 w-[15px] h-[15px] mt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4M12 17h.01" /></svg>
+                    هذا النموذج للعرض فقط. لا يفحص البريد أو كلمة المرور، ولا يرسل أي بيانات إلى iTutor24. استخدم الموقع الرسمي لتسجيل الدخول الحقيقي.
+                </div>
+            </div>
+
+            <small class="block mt-1 text-[11px] text-muted text-left" dir="ltr">© 2026 Micro Learn — Admin UI Concept</small>
+        </div>
+
+        <!-- الجهة الملوّنة: بتختفي على الموبايل -->
+        <div class="hidden lg:flex relative overflow-hidden items-center justify-center p-10 bg-gradient-to-br from-[#075b70] to-[#073948]">
+
+            <span class="absolute -left-[170px] -top-[150px] w-[420px] h-[420px] rounded-full border-[76px] border-white/[.04]"></span>
+            <span class="absolute -right-[140px] -bottom-[150px] w-[350px] h-[350px] rounded-full border-[65px] border-sun/[.08]"></span>
+
+            <div class="relative w-[min(480px,95%)] text-center text-white">
+                <div class="w-[94px] h-[94px] grid place-items-center mx-auto mb-8 rounded-[30px] bg-sun text-brand-deep rotate-[9deg] shadow-[0_22px_70px_#002d3c40]">
+                    <svg class="w-[52px] h-[52px] -rotate-[9deg]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5zM7 12v5c3.3 2.8 6.7 2.8 10 0v-5M21 10v7" /></svg>
+                </div>
+
+                <span class="inline-flex items-center gap-[7px] text-[11px] font-black text-sun">
+                    <i class="w-1.5 h-1.5 rounded-full bg-sun"></i>
+                    مساحة عمل واحدة
+                </span>
+                <h2 class="max-w-[440px] mx-auto mt-1 mb-3 text-[30px] leading-[1.65] font-bold">
+                    كل أدوات إدارة التعلم <span class="text-sun">في مكان واحد</span>
+                </h2>
+                <p class="text-xs leading-[2.1] text-[#bddadd]">أنشئ دوراتك، راقب الاختبارات، وتابع طلابك عبر لوحة تحكم مبسطة ومتجاوبة.</p>
+
+                <div class="flex justify-center gap-3 my-[30px]">
+                    <div class="min-w-[105px] px-5 py-4 rounded-[14px] border border-white/[.12] bg-white/[.09]">
+                        <strong class="block text-lg">01</strong>
+                        <small class="text-[10px] text-[#c4dfe1]">التحكم بالمحتوى</small>
+                    </div>
+                    <div class="min-w-[105px] px-5 py-4 rounded-[14px] border border-white/[.12] bg-white/[.09]">
+                        <strong class="block text-lg">02</strong>
+                        <small class="text-[10px] text-[#c4dfe1]">متابعة الطلاب</small>
+                    </div>
+                    <div class="min-w-[105px] px-5 py-4 rounded-[14px] border border-white/[.12] bg-white/[.09]">
+                        <strong class="block text-lg">03</strong>
+                        <small class="text-[10px] text-[#c4dfe1]">تحليل الأداء</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="assets/js/admin.js"></script>
+</body>
+
+</html>

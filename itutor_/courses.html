@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات والفصول · Micro Learn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/admin.css">
+
+</head>
+
+<body class="bg-page font-cairo text-ink text-[13px] antialiased">
+    <aside id="sidebar" class="fixed top-0 right-0 z-30 h-screen w-[258px] bg-brand-deep flex flex-col overflow-y-auto translate-x-full lg:translate-x-0 transition-transform">
+
+        <div class="flex items-center gap-3 p-6 border-b border-white/10">
+            <img src="assets/images/brand-mark.svg" alt="" class="w-11 h-11">
+            <div>
+                <span class="block text-white font-bold text-base">MICRO LEARN</span>
+                <span class="text-[9px] tracking-widest text-white/60">ADMIN WORKSPACE</span>
+            </div>
+        </div>
+
+        <nav class="flex-1 px-3 pb-6">
+
+            <p class="px-4 pt-6 pb-2 text-[10px] font-extrabold text-[#6eacb5]">الرئيسية</p>
+            <a href="index.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                </svg>
+                نظرة عامة
+            </a>
+
+            <a href="courses.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold bg-[#147589] text-white shadow-[inset_-3px_0_0_#ffcf24]">
+                <svg class="w-[18px] h-[18px] text-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                </svg>
+                الدورات والفصول
+                <span class="ms-auto rounded-full bg-sun px-2 text-[10px] text-[#044858]">7</span>
+            </a>
+
+            <a href="quizzes.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="4" width="14" height="17" rx="2" />
+                    <path d="M9 4.5V2h6v2.5M9 10h6M9 14h6M9 18h3" />
+                </svg>
+                الاختبارات
+                <span class="ms-auto rounded-full bg-white/10 px-2 text-[10px] text-white">7</span>
+            </a>
+
+            <a href="students.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                الطلاب
+            </a>
+
+            <a href="tutors.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-5 9 5-9 5-9-5zM7 12v5c3.3 2.8 6.7 2.8 10 0v-5M21 10v7" />
+                </svg>
+                المدرّبون
+            </a>
+
+            <p class="px-4 pt-6 pb-2 text-[10px] font-extrabold text-[#6eacb5]">العمليات</p>
+
+            <a href="orders.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="15" rx="2" />
+                    <path d="M3 9h18M16 15h2" />
+                </svg>
+                الطلبات والمدفوعات
+            </a>
+
+            <a href="bookings.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="5" width="18" height="16" rx="2" />
+                    <path d="M7 3v4M17 3v4M3 10h18" />
+                </svg>
+                الجلسات والحجوزات
+            </a>
+
+            <p class="px-4 pt-6 pb-2 text-[10px] font-extrabold text-[#6eacb5]">إدارة المنصة</p>
+
+            <a href="appearance.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="9" />
+                    <circle cx="7" cy="11" r="1" />
+                    <circle cx="11" cy="7" r="1" />
+                    <circle cx="16" cy="9" r="1" />
+                    <path d="M14 18c-2 0-3-2-2-3.4 1-1.7 2.8-2.3 4-1.5 2.4 1.6 1 4.9-2 4.9z" />
+                </svg>
+                مظهر الموقع
+            </a>
+
+            <a href="settings.html"
+                class="flex items-center gap-3 my-[3px] px-3.5 py-3 rounded-[11px] font-bold text-[#c9dee1] hover:bg-white/[.075] hover:text-white transition">
+                <svg class="w-[18px] h-[18px] opacity-80" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="3.5" />
+                    <path d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1 7 17M17 7l2.1-2.1" />
+                </svg>
+                الإعدادات العامة
+            </a>
+        </nav>
+
+        <div class="border-t border-white/10 px-5 py-4">
+            <div class="relative overflow-hidden rounded-[15px] bg-gradient-to-br from-[#167f91] to-[#096274] p-4">
+                <span
+                    class="absolute -left-8 -top-9 w-[85px] h-[85px] rounded-full border-[15px] border-white/[.06]"></span>
+                <svg class="w-[18px] h-[18px] text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 2 2 7 7 3-7 2-2 8-2-8-7-2 7-3 2-7z" />
+                </svg>
+                <span class="block mt-2 mb-0.5 text-xs font-bold text-white">تجربة إدارة أكثر بساطة</span>
+                <p class="mb-2 text-[10px] leading-[1.85] text-[#d1e6e8]">تصميم جديد لواجهة المدير مع إجراءات سريعة
+                    وتنظيم أوضح.</p>
+                <a href="appearance.html" class="text-[11px] font-extrabold text-sun">تخصيص المظهر ←</a>
+            </div>
+        </div>
+
+    </aside>
+    <div id="overlay" class="fixed inset-0 z-20 hidden bg-[#081c25]/60 lg:hidden"></div>
+
+    <div class="lg:mr-[258px]">
+
+        <header
+            class="sticky top-0 z-10 h-[66px] lg:h-[76px] flex items-center justify-between gap-3 px-4 lg:px-[34px] bg-white/95 backdrop-blur border-b border-line">
+
+            <div class="flex items-center gap-3">
+
+            <button id="menu-btn" class="lg:hidden w-[39px] h-[39px] grid place-items-center rounded-[11px] border border-line bg-white text-[#466879]">
+
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+
+            </button>
+
+            <label class="hidden md:flex items-center gap-2 w-[260px] lg:w-[340px] px-3 rounded-[11px] border border-line bg-[#f8fbfb] text-[#92a3ac]">
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="10.5" cy="10.5" r="7" />
+                    <path d="m16 16 5 5" />
+                </svg>
+                <input type="search" placeholder="ابحث عن دورة أو اختبار..."
+                    class="flex-1 h-[38px] bg-transparent outline-none text-ink placeholder:text-[#a7b4bb]">
+            </label>
+            </div>
+
+            <div class="flex items-center gap-1.5 sm:gap-3">
+
+                <span
+                    class="hidden sm:flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#fff6d8] text-[10px] font-extrabold text-[#916e09]">
+                    <svg class="w-[13px] h-[13px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    وضع المعاينة
+                </span>
+
+                <button
+                    class="w-[39px] h-[39px] grid place-items-center rounded-[11px] border border-line bg-white text-[#466879] hover:bg-[#eaf5f5] hover:text-brand transition">
+                    <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10z" />
+                    </svg>
+                </button>
+
+                <button
+                    class="relative w-[39px] h-[39px] grid place-items-center rounded-[11px] border border-line bg-white text-[#466879] hover:bg-[#eaf5f5] hover:text-brand transition">
+                    <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+                    </svg>
+                    <span
+                        class="absolute top-[7px] right-2 w-2.5 h-2.5 rounded-full bg-[#efb52c] border-2 border-white"></span>
+                </button>
+
+                <div class="flex items-center gap-2.5 sm:pr-2.5 sm:border-r border-line">
+                    <span
+                        class="w-[38px] h-[38px] grid place-items-center rounded-[13px] bg-[#e3f1f0] text-sm font-black text-brand">AD</span>
+                    <div class="hidden sm:block">
+                        <span class="block text-xs font-bold">مدير النظام</span>
+                        <span class="block text-[10px] text-muted">مسؤول المنصة</span>
+                    </div>
+                </div>
+
+                <a href="login.html" title="تسجيل الخروج" class="w-[39px] h-[39px] grid place-items-center rounded-[11px] border border-line bg-white text-[#466879] hover:bg-[#eaf5f5] hover:text-brand transition">
+                    <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 17l5-5-5-5M15 12H3M12 3h7a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-7" />
+                    </svg>
+                </a>
+
+            </div>
+        </header>
+
+        <main class="px-4 lg:px-[34px] pt-5 lg:pt-[30px] pb-14">
+
+            <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3 md:gap-5 mb-[22px]">
+              <div>
+                <div class="flex items-center gap-1.5 mb-2 text-[11px] text-[#8d9da6]">
+                  <span>الرئيسية</span>
+                  <svg class="w-3 h-3 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                  <span class="font-extrabold text-brand">الدورات والفصول</span>
+                </div>
+                <h1 class="text-[21px] md:text-[25px] leading-[1.4] font-black text-brand-deep">الدورات والفصول</h1>
+                <p class="mt-1 text-xs text-[#8096a0]">إدارة المحتوى التعليمي والدورات من مكان واحد</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button class="min-h-[39px] inline-flex items-center justify-center gap-2 px-[15px] rounded-[11px] font-extrabold whitespace-nowrap hover:-translate-y-px transition bg-brand text-white shadow-[0_6px_15px_rgba(6,113,136,.16)]">
+                  <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                  إضافة دورة
+                </button>
+                <button class="min-h-[39px] inline-flex items-center justify-center gap-2 px-[15px] rounded-[11px] font-extrabold whitespace-nowrap hover:-translate-y-px transition border border-line bg-white text-brand-deep">
+                  <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></svg>
+                  تصدير البيانات
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2 mb-[17px] px-3.5 py-[11px] rounded-xl border border-[#cbe7e5] bg-[#eaf8f5] text-[11px] font-bold leading-[1.7] text-[#477b82]">
+              <svg class="shrink-0 w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 2-2.5 2-2.5 4M12 17h.01"/></svg>
+              بيانات تجريبية مأخوذة جزئياً من هيكل لقطات الشاشة، ولا تُعد سجلات حية.
+            </div>
+
+            <div class="flex flex-wrap gap-3 mb-[15px]">
+              <div class="px-[15px] py-2.5 rounded-xl border border-line bg-white text-[11px] font-extrabold">إجمالي الدورات <b class="mx-1.5 text-brand">7</b></div>
+              <div class="px-[15px] py-2.5 rounded-xl border border-line bg-white text-[11px] font-extrabold">المنشورة <b class="mx-1.5 text-brand">7</b></div>
+              <div class="px-[15px] py-2.5 rounded-xl border border-line bg-white text-[11px] font-extrabold">المسودات <b class="mx-1.5 text-brand">0</b></div>
+              <div class="px-[15px] py-2.5 rounded-xl border border-line bg-white text-[11px] font-extrabold">الطلاب المسجلون <b class="mx-1.5 text-brand">17</b></div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2 md:gap-[11px] mb-[17px] p-3 md:px-[19px] md:py-[17px] rounded-[20px] border border-line bg-white shadow-[0_10px_38px_rgba(16,67,78,.04)]">
+              <label class="flex-1 basis-full md:basis-auto min-w-[210px] min-h-[41px] flex items-center gap-2 px-2.5 rounded-[11px] border border-line bg-white text-[#8a9eaa]">
+                <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="7"/><path d="m16 16 5 5"/></svg>
+                <input type="search" placeholder="ابحث بالاسم أو العنوان..." class="w-full min-w-0 bg-transparent outline-none text-ink">
+              </label>
+              <select class="min-h-[41px] flex-1 md:flex-none md:min-w-[135px] px-[11px] rounded-[11px] border border-line bg-white text-[11px] font-bold text-[#5f7984]">
+                <option>كل الحالات</option>
+                <option>منشور</option>
+                <option>مسودة</option>
+              </select>
+              <select class="min-h-[41px] flex-1 md:flex-none md:min-w-[135px] px-[11px] rounded-[11px] border border-line bg-white text-[11px] font-bold text-[#5f7984]">
+                <option>جميع التصنيفات</option>
+                <option>لغة</option>
+                <option>أسلوب الحياة</option>
+                <option>تصميم</option>
+                <option>علم</option>
+                <option>مجال الاتصالات</option>
+              </select>
+              <button class="min-h-[32px] inline-flex items-center gap-1.5 px-2.5 rounded-[9px] text-[11px] font-extrabold whitespace-nowrap transition border border-line bg-white text-brand-deep">
+                <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 3v6h-6M3 21v-6h6M5 9a8 8 0 0 1 13.6-3.6L21 9M3 15l2.4 3.6A8 8 0 0 0 19 15"/></svg>
+                إعادة تعيين
+              </button>
+            </div>
+
+            <section data-paginate="6" class="overflow-hidden rounded-[20px] border border-line bg-white shadow-[0_10px_38px_rgba(16,67,78,.04)]">
+
+              <div class="flex flex-wrap items-center justify-between gap-2.5 p-[15px] md:px-5 md:pt-[21px] md:pb-4">
+                <div class="flex items-center gap-2">
+                  <h2 class="text-[15px] font-black text-brand-deep">قائمة الدورات</h2>
+                  <span class="px-[9px] py-[3px] rounded-full bg-[#e8f5f3] text-[10px] font-black text-[#067184]">7 عنصر</span>
+                </div>
+                <div class="flex items-center gap-[5px]">
+                  <button class="min-h-[32px] inline-flex items-center gap-1.5 px-2.5 rounded-[9px] text-[11px] font-extrabold whitespace-nowrap transition border border-line bg-white text-brand-deep">
+                    <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/></svg>
+                    تصدير CSV
+                  </button>
+                  <button class="min-h-[32px] inline-flex items-center gap-1.5 px-2.5 rounded-[9px] text-[11px] font-extrabold whitespace-nowrap transition bg-brand text-white">
+                    <svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
+                    إضافة جديد
+                  </button>
+                </div>
+              </div>
+
+              <div class="overflow-x-auto">
+                <table class="w-full text-right text-[11px] whitespace-nowrap">
+                  <thead class="bg-[#f5faf9] text-[10px] font-extrabold text-[#7b939c]">
+                    <tr>
+                      <th class="px-[13px] py-[13px] border-b border-line">الدورة</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">المدرّب</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">التصنيف</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">السعر</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">الطلاب</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">الحالة</th>
+                      <th class="px-[13px] py-[13px] border-b border-line">الإجراءات</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">New Update Features</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#2010 • 12 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#e3f1f0] text-brand">رم</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">ريهام محمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">لغة</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold">مجاني</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">3</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">صفحة تعلم جديدة</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#2008 • 8 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#fff1bd] text-[#a77310]">نأ</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">نرمين أحمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">أسلوب الحياة</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold">مجاني</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">5</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">Travel Management Course</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#2007 • 16 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#fce7eb] text-[#b45a6a]">نأ</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">نرمين أحمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">أسلوب الحياة</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold">مجاني</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">1</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">تصميم المواقع للمبتدئين</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#2005 • 14 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#e1ebff] text-[#426daf]">آم</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">آية محمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">تصميم</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold"><span dir="ltr">$10.00</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">1</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">مستقبل الطاقة</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#2004 • 22 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#eee9ff] text-[#7762b2]">رم</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">ريهام محمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">علم</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold"><span dir="ltr">$60.00</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">2</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">كيفية إدارة والتأثير على فريقك الافتراضي</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#1999 • 10 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#dbf5e6] text-[#37805d]">رم</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">ريهام محمد</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">مجال الاتصالات</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold"><span dir="ltr">$50.00</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">1</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+            <tr class="hover:bg-[#fbfdfd]">
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] min-w-[160px] max-w-[250px] whitespace-normal">
+                        <span class="block font-extrabold">كن مدير منتج</span>
+                        <span class="block text-[10px] font-semibold text-[#859aa2]">#1995 • 15 درس</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-2.5">
+                          <span class="w-[31px] h-[31px] grid place-items-center rounded-[10px] text-[11px] font-black bg-[#e3f1f0] text-brand">حم</span>
+                          <div>
+                            <span class="block font-bold text-[#213f4b]">حنان محمود</span>
+                            <span class="block text-[10px] text-[#8ea1a9]">حساب تعليمي</span>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]"><span class="px-2.5 py-[5px] rounded-full bg-[#f1f4f5] text-[10px] font-extrabold text-[#708891]">استراتيجية العمل</span></td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5] font-bold">مجاني</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">4</td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <span class="inline-flex items-center gap-1.5 px-[9px] py-1 rounded-full bg-[#dff1fd] text-[10px] font-extrabold text-[#267db2]"><i class="w-[5px] h-[5px] rounded-full bg-current"></i>منشور</span>
+                      </td>
+                      <td class="px-[13px] py-[13px] border-b border-[#f0f4f5]">
+                        <div class="flex items-center gap-1">
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تفاصيل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="تعديل الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5H6a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-6"/><path d="m16 5 3 3M10 14l9-9 2 2-9 9-4 1z"/></svg></button>
+                          <button class="w-[29px] h-[29px] grid place-items-center rounded-[9px] text-[#466879] hover:bg-[#eff7f7] hover:text-brand transition" title="حذف الدورة"><svg class="w-[15px] h-[15px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M6 6l1 15h10l1-15M10 10v7M14 10v7"/></svg></button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="flex flex-wrap items-center justify-between gap-2 px-[13px] md:px-5 py-[13px] md:py-4">
+                <span data-page-info class="text-[11px] text-muted"></span>
+                <div data-page-buttons class="flex gap-[5px]"></div>
+              </div>
+
+            </section>
+        </main>
+
+    </div>
+    <script src="assets/js/admin.js"></script>
+</body>
+
+</html>
